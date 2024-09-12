@@ -1,0 +1,65 @@
+<html ng-app="todoApp">
+
+</html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <title>Todo</title>
+    <link rel="stylesheet" href="todostyle.css">
+
+    <script src="//unpkg.com/@uirouter/angularjs@1.0.5/release/angular-ui-router.js"></script>
+    <script src="routing.js"></script>
+    
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/10588/10588254.png" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="box">
+
+        <div class="side-navigation">
+            <div class="logo">
+                <img class="logoimg" src="https://cdn-icons-png.flaticon.com/512/10588/10588254.png" alt="logo">
+                <div class="text">
+                    <p class="logotext"> Todo App</p>
+                    <!-- <p class="underlogotext">Keep Your Things Private</p> -->
+                </div>
+            </div>
+
+            <div class="div" ui-sref="todo" ui-sref-active="active"> My Todo</div>
+        </div>
+        <ui-view></ui-view>
+      
+
+
+
+
+
+
+
+
+
+        <!-- <div class="todoList" ng-controller="TodoListController as todoList">
+          <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1950/1950715.png" alt="">
+          <img class="icon" src="https://cdn-icons-png.flaticon.com/512/768/768818.png" alt="">
+        <img  class="icon" src="   https://cdn-icons-png.flaticon.com/512/7016/7016958.png " alt="">
+         <img  class="icon" src="   https://cdn-icons-png.flaticon.com/512/3096/3096673.png " alt=""> 
+          <img  class="icon" src="   https://cdn-icons-png.flaticon.com/512/1159/1159633.png " alt="">
+        </div> -->
+
+
+
+
+    </div>
+
+</body>
+
+</html>
