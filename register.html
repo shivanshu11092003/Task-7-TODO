@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="registerApp">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <link rel="stylesheet" href="register.css" type="text/css">
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/10588/10588254.png" type="image/icon type">
+    <link rel="icon" href="to-do.png" type="image/icon type">
+    <script src="//unpkg.com/@uirouter/angularjs@1.0.5/release/angular-ui-router.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap"
         rel="stylesheet">
+        <script src="register.js">
+
+
+        </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,41 +32,57 @@
         <div class="box">
 
 
-            <div class="box1">
+            <div class="box1" ng-controller="registerController as register">
+
+
                 <div class="logodiv"> <img class="logo" src="https://cdn-icons-png.flaticon.com/512/10588/10588254.png"
                         alt="">
-                    
-                        <br>
-                        <h3>Get Started</h3>
-                        <p class="welcome">Welcome to Todo App, Register</p>
-                        <br>
-                    </div>
 
-                
-                <label class="label"><i class="reddot">*</i> Full Name 
-                   <br> <input class="input" id="username" type="text" placeholder="Full Name"
-                        pattern="^[a-zA-Z]+[a-zA-Z0-9]+[@][a-z]+[\.][a-z]{2,}$" required></label>
+                    <br>
+                    <h3>Get Started</h3>
+                    <p class="welcome">Welcome to Todo App, Register</p>
+                    <br>
+                </div>
 
-                <label class="label"> <i class="reddot">*</i> Email 
+
+                <label class="label"><i class="reddot">*</i> User Name
+                    <br> <input class="input" id="username" type="text" placeholder="User Name"
+                    ng-model="register.username" maxlength="15"   required></label>
+                    <div class="msg" id="msgUsername"></div>
+                <label class="label"><i class="reddot">*</i> First Name
+                    <br> <input class="input" id="fname" type="text" placeholder="First Name"
+                     ng-model="register.fname"  required></label>
+                     <div class="msg" id="msgfname"></div>
+
+                <label class="label"><i class="reddot">*</i> Last Name
+                    <br> <input class="input" id="lname" type="text" placeholder="Last Name"
+                          ng-model="register.lname"  required></label>
+                          <div class="msg" id="msglname"></div>
+
+                <label class="label"> <i class="reddot">*</i> Email
                     <br>
                     <input class="input" id="email" type="text" placeholder="Email"
-                        pattern="^[a-zA-Z]+[a-zA-Z0-9]+[@][a-z]+[\.][a-z]{2,}$" required>
+                          ng-model="register.email"  required>
                 </label>
+                <div class="msg" id="msgemail"></div>
 
                 <label class="label" for="password"> <i class="reddot">*</i> Password
-                   <br> <input class="input" id="password" type="password" placeholder="Password"
-                        required>
+                    <br> <input class="input" id="password" type="password" ng-model="register.password" placeholder="Password" required>
                 </label>
+                <div class="msg" id="msgpassword"></div>
 
                 <label class="label" for="confirmpassword"><i class="reddot">*</i> Confirm Password
-                    <br> <input class="input" id="password" type="password" placeholder="Confirm Password"
-                         required>
-                 </label>
-
+                    <br> <input class="input" id="confirmpassword" type="password"  ng-model="register.confirmpassword" placeholder="Confirm Password" required>
+                </label>
                 <div class="msg" id="msg"></div>
+                
+
+                
                 <div class="pmsg" id="pmsg"></div>
 
-                <button id="registerbtn" class="submitbtn">Register</button>
+                <button id="registerbtn" ng-click="register.register()" class="submitbtn">Register</button>
+                <p id="createAccount" class="createAccount" ng-click="register.redirect()">Already have an account? login here</p>
+
             </div>
             <!-- <div class="box2">
                 <img src="https://t3.ftcdn.net/jpg/02/59/31/70/360_F_259317013_nJJaBgGGzvXMd6cAyLd6yMJtbdnd61wk.jpg"
@@ -74,9 +95,6 @@
 
 
 </body>
-<script>
 
-
-</script>
 
 </html>

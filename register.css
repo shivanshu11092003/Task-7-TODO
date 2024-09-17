@@ -8,16 +8,17 @@
 
 .main{
 
+    background-color: #ffca07;    
     width: 100vw;
     height: 100vh;
-    background-color: #ffca07;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .box{
-    background-color: #f8f8f9;
-    height: 93vh;
+    background-color: white;
+
+    height: 98%;
     width: 30vw;
     display: flex;
     flex-direction: row;
@@ -28,10 +29,12 @@
 
 }
 .box1{
-    background-color: #f8f8f9;
+    background-color: white;
 
-    height: 97%;
+
+    height: 96%;
     width: 26vw;
+
 
     display: flex;
     flex-direction: column;
@@ -41,7 +44,7 @@
     
 }
 .box2{
-    background-color: #f8f8f9;
+    background-color: white;
     height: 96%;
     width: 55%;
     border-radius: 1em;
@@ -52,17 +55,17 @@
     align-items: center; 
 }
 .box2 img{
-    background-color: #f8f8f9;
+    background-color: #fff;
     height: 100%;
     border-radius: 1.3em;
     width: 100%;
 }
 .box1 h1{
-    background-color: #f8f8f9;
+    background-color: #fff;
     display: flex;
 }
 h3{
-    background-color: #f8f8f9;
+    background-color: #fff;
     font-size: 2.9rem;
     color: black;
     font-weight: 300;
@@ -73,7 +76,7 @@ h3{
 
 }
 .welcome{
-    background-color: #f8f8f9;
+    background-color: #fff;
     color: black;
     display: flex;
     align-self: flex-start;
@@ -82,23 +85,28 @@ h3{
     
 }
 .label{
-    margin: 1.1rem;
-    background-color: #f8f8f9;
+    margin: 1rem;
+    background-color: #fff;
     font-size: 1.5rem;
     width: 26vw;
+
+
+    
 
 
 }
 .input{
     font-size: 1.4rem;
-    height: 6vh;
+    height: 4vh;
     width: 26vw;
     margin-top: 0.9em;
     border-radius: .7em;
     border: 1.5px solid rgb(50, 49, 49);
-    outline: 0;
+    outline: 1;
     box-shadow: 0px 0px 20px -18px;
     padding: .5em;
+    padding-left: .9;
+    color: #000008;
 
 }
 .input:hover {
@@ -124,7 +132,7 @@ h3{
   }
   
 .box1 p{
-    background-color: #f8f8f9;
+    background-color: #fff;
     color: black;
 }
 .asteacher:hover{
@@ -132,12 +140,14 @@ h3{
     
 }
 .msg{
+    display: flex;
+    align-self: flex-start;
     color: red;
-    background-color: #f8f8f9;
+    background-color: #fff;
 }
 .pmsg{
     color: red;
-    background-color: #f8f8f9;
+    background-color: #d5d5d5;
 }
 /* .notes{
     background-color: #f8f8f9;
@@ -151,7 +161,7 @@ h3{
     margin-left: .4em;
 } */
 .logo{
-    background-color: #f8f8f9;
+    background-color: #fff;
 
     
     height: 4vh;
@@ -159,13 +169,22 @@ h3{
 
 }
 .logodiv{
-    background-color: #f8f8f9;
+    background-color: #fff;
 
     align-self: flex-start;
     margin-bottom: 2vh;
 }
 .reddot{
-    background-color: #f8f8f9;
+    background-color: #fff;
 
     color: red;
 }
+.createAccount{
+    margin: 1rem;
+    font-size: 1.3rem;
+
+}
+.createAccount:hover{
+    text-decoration: underline;
+}
+

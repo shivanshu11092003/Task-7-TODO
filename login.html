@@ -27,40 +27,39 @@
                 <img src="https://t3.ftcdn.net/jpg/02/59/31/70/360_F_259317013_nJJaBgGGzvXMd6cAyLd6yMJtbdnd61wk.jpg"
                     alt="pic">
             </div>
- 
+            <!-- https://cdn-icons-png.flaticon.com/512/10588/10588254.png -->
 
-            <div class="box1">
-                <div class="logodiv"> 
-                    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/10588/10588254.png"
-                    alt="">
-                    <br>
-      
-                    <p class="welcome">Login to Your Account </p>
-                    <br>
-                
-                 
-                </div>
-               
-                
-                <label class="label">Email 
-                    <br>
-                    <input class="input" id="email" type="text" placeholder="Email"
-                        pattern="^[a-zA-Z]+[a-zA-Z0-9]+[@][a-z]+[\.][a-z]{2,}$" required>
-                </label>
-                <div class="msg" id="msg"></div>
+           
+        <div class="box1" ng-controller="loginController as login">
+            <div class="logodiv">
+                <img class="logo" src="https://cdn-icons-png.flaticon.com/512/10588/10588254.png" alt="">
+                <br>
 
-                <label class="label" for="password">Password
-                   <br> <input class="input" id="password" type="password" placeholder="Password"
-                        required>
-                </label>
-                
-                <div class="pmsg" id="pmsg"></div>
+                <p class="welcome">Login to Your Account </p>
+                <br>
 
-                <button id="loginbtn" class="submitbtn"> Sign In</button>
 
-              <p id="createAccount" class="createAccount">Don't have an account?   Register here</p>
-            
             </div>
+
+
+            <label class="label"> User Name
+                <br> <input class="input" id="username" type="text" placeholder="User Name" ng-model="login.username"
+                    maxlength="15" required></label>
+            <div class="msg" id="msgUsername"></div>
+
+            <label class="label" for="password"> Password
+                <br> <input class="input" id="password" type="password" ng-model="login.password" placeholder="Password"
+                    required>
+            </label>
+            <div class="msg" id="msgpassword"></div>
+
+            <div class="pmsg" id="pmsg"></div>
+
+            <button id="loginbtn" class="submitbtn" ng-click="login.logIn()"> Sign In</button>
+
+            <p id="createAccount" class="createAccount" ng-click="login.redirect()">Don't have an account? Register here</p>
+
+        </div>
            
 
 
@@ -69,11 +68,6 @@
 
 
 </body>
-<script >
-    document.getElementById("createAccount").addEventListener("click",()=>{
-        location.assign("http://127.0.0.1:5500/register.html")
-    })
 
-</script>
 
 </html>

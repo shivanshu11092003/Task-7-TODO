@@ -112,9 +112,9 @@
 }
 
 .icon {
-    background-color: #ffff;
-    width: 2vw;
-    height: 3vh;
+    background-color: #000000;
+    width: .7vw;
+    height: 1.2vh;
 }
 
 .div:hover .icon {
@@ -130,16 +130,16 @@
     outline: 0;
     box-shadow: 0px 0px 20px -18px;
     padding: 0.3em;
-    margin: 1rem;
+    margin: 1em;
 }
 
 .add {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 10px;
-    height: 4em;
+    height: 3.2em;
     width: 7em;
     background-color: transparent;
-    font-size: 1rem;
+    font-size: 1.2em;
     background-color: black;
     color: whitesmoke;
     transition: all 0.3s;
@@ -158,11 +158,15 @@
     text-decoration: line-through;
     color: grey;
     font-size: 1.8rem;
+    border: 0;
+    width: 50vw;
 }
 
 .done-false {
     background-color: #f8f8f9;
     font-size: 1.8rem;
+    border: 0;
+
 }
 
 .todoDone {
@@ -178,7 +182,7 @@
     width: 2em;
     background-color: transparent;
     font-size: 1rem;
-    background-color: rgb(72, 72, 72);
+    background-color: #000000;
     color: whitesmoke;
     transition: all 0.3s;
     border: 0;
@@ -200,6 +204,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1em;
 
 }
 .unstyled {
@@ -213,7 +218,7 @@
 .eachItem {
     border: 1px solid black;
     margin: 0.5em;
-    width: 70vw;
+    width: 60vw;
     height: 7vh;
     border-radius: 1em;
     list-style-type: none;
@@ -254,4 +259,7 @@
     background-color: #f8f8f9;
 
     color: red;
+}
+.update{
+    height: 100%
 }
