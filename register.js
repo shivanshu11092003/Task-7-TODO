@@ -75,23 +75,26 @@ myRegister.controller("registerController", ["$http", function ($http) {
         console.log(username)
         var registerPostRequest = {
             method: 'Post',
-            url: 'http://10.21.99.17:8000/todo/register/',
+            url: 'https://10.21.97.60:8000/account/user_register/',
             data: {
                 username: username,
                 first_name: fname,
                 last_name: lname,
                 email: email,
-                password1: password,
-                password2: confirmpassword
+                password: password,
+                cpassword: confirmpassword
             },
         }
 
-        $http(registerPostRequest).then(function (response) {
+        $http(registerPostRequest,{
+            // withCredentials: true
+        }).then(function (response) {
             console.log(response.status)
             if (response.status == 201) {
-                location.assign("http://127.0.0.1:5502/login.html")
+                location.assign("http://127.0.0.1:5501/login.html")
             }
             else {
+                
                 document.getElementById("msg").innerText = "something went wrong"
 
             }

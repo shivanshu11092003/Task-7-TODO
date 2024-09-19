@@ -169,3 +169,360 @@ h3{
 .createAccount:hover{
     text-decoration: underline;
 }
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.side-navigation {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    flex-direction: column;
+    width: 16vw;
+    min-height: 100%;
+    position: fixed;
+    align-self: flex-start;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+.logo1 {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 7vh;
+    align-items: center;
+    border-radius: 1em;
+    padding: .5rem;
+    margin: 1rem;
+}
+.logoimg1 {
+    background-color: #ffffff;
+    width: 3vw;
+    margin: 1em;
+    height: 5vh;
+}
+
+.text1 {
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+}
+.logotext12 {
+    background-color: #ffffff;
+    font-weight: 700;
+    font-size: 1.6rem;
+    display: flex;
+    padding: 1rem;
+
+}
+
+.tododiv {
+    background-color: #ffffff;
+    color: black;
+    margin: 0.3em;
+    font-weight: 300;
+    font-size: 1.6rem;
+    padding: 1rem;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    font-family: "Inter", sans-serif;
+    border-radius: 0.7em;
+}
+.tododiv:hover {
+    background-color: #ffffff;
+    border-radius: 0.7em;
+}
+.tododiv:hover .icon {
+    background-color: rgb(254, 239, 195);
+}
+
+.divlog1 {
+    background-color: #f1f1f1;
+    color: black;
+    margin: 1em;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    margin-top: 69vh;
+}
+.todolist1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    align-self: flex-end;
+    width: 83.9%;
+
+}
+.form1{
+    background-color: transparent;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+
+}
+.input1 {
+    width: 40vw;
+    height: 5.5vh;
+    font-size: 1.9rem;
+    border-radius: 0.7em;
+    border: 1.5px solid lightgrey;
+
+    outline: 0;
+    box-shadow: 0px 0px 20px -18px;
+    padding: 0.3em;
+    margin: 1em;
+}
+.add1 {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+    height: 3.2em;
+    width: 7em;
+    background-color: transparent;
+    font-size: 1.2em;
+    background-color: black;
+    color: whitesmoke;
+    transition: all 0.3s;
+}
+.add1:hover {
+    box-shadow: 1px 1px 29px 1px rgba(39, 39, 47, 0.4);
+}
+.checkbox {
+    background-color: #f8f8f9;
+    display: flex;
+}
+.done-true {
+    padding: .7em;
+    background-color: #f8f8f9;
+    text-decoration: line-through;
+    color: grey;
+    font-size: 1.8rem;
+    border: 0;
+    
+
+}
+.done-false {
+    background-color: #f8f8f9;
+    font-size: 1.8rem;
+    border: 0;
+    padding: .7em;
+
+
+}
+.todoDone {
+    width: 4vw;
+    height: 3vh;
+    background-color: #f8f8f9;
+}
+.todobtn {
+    margin: 0.1em;
+    border-radius: 10px;
+    height: 2em;
+    width: 2em;
+    background-color: transparent;
+    font-size: 1rem;
+    background-color: #000000;
+    color: whitesmoke;
+    transition: all 0.3s;
+    border: 0;
+}
+
+.todobtn:hover {
+    box-shadow: 1px 1px 29px 1px rgba(39, 39, 47, 0.4);
+}
+
+.unstyled {
+    background-color: transparent;
+        margin: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    border-radius: 1em;
+    margin-left: 10vw;
+}
+
+
+.eachItem {
+
+    margin: 0.5em;
+    width: 33vw;
+    height: 15vh;
+    border-radius: 1em;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f9;
+    flex-wrap: nowrap;
+
+}
+.done1 {
+    padding: 0.2em;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    border: 0;
+}
+.btn {
+    padding: 1em;
+    background-color: transparent;
+    display: flex;
+
+}
+.About {
+    background-color: #f8f8f9;
+}
+
+.icon {
+    background-color: #000000;
+    width: .7vw;
+    height: 1.2vh;
+}
+.logout {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+    height: 2.8em;
+    width: 11em;
+    background-color: #f8f8f9;
+
+    font-size: 1rem;
+    background-color: black;
+    color: whitesmoke;
+    transition: all 0.3s;
+}
+.btn1 {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 21em;
+}
+.reddot{
+    background-color: #f8f8f9;
+
+    color: red;
+}
+.update{
+    height: 100%
+}
+.updateTodo{
+    opacity: 1;
+
+    font-size: 1.4rem;
+    height: 6vh;
+    width: 20vw;
+    margin-top: 0.9em;
+    border-radius: .7em;
+    border: 1.5px solid rgb(50, 49, 49);
+    outline: 0;
+    box-shadow: 0px 0px 20px -18px;
+    padding: .3em;
+
+}
+
+@media (max-width:1308px){
+    .box2{
+
+        display: none;
+
+    }
+    .box1{
+        border-radius: 1em;
+    }
+    .label{
+        font-size: 1.7rem;
+
+    }
+    .input{
+        width: 30vw;
+    }
+    .welcome{
+        font-size: 2.1rem;
+    }
+    .createAccount{
+
+        font-size: .9rem;
+    
+    }
+    .logo{
+    width: 3.7vw;
+    }
+
+
+}
+@media (max-width:1050px){
+    .box2{
+
+        display: none;
+
+    }
+    .box1{
+        border-radius: .7em;
+    }
+    .label{
+        font-size: 1.4rem;
+
+    }
+    .input{
+        width: 30vw;
+    }
+    .welcome{
+        font-size: 1.8rem;
+    }
+    .createAccount{
+
+        font-size: .8rem;
+    
+    }
+    .logo{
+        width: 3.8vw;
+    
+    }
+
+
+}
+@media (max-width:506px){
+    .box2{
+        display: none;
+    }
+    .box1{
+        border-radius: .5em;
+    }
+    .label{
+        font-size: 1.2rem;
+
+    }
+    .input{
+        width: 60vw;
+    }
+    .welcome{
+        font-size: 1.8rem;
+    }
+    .createAccount{
+
+        font-size: .8rem;
+    
+    }
+    .logo{
+        height: 5vh;
+        width: 4.8vw;
+    
+    }
+    .submitbtn{
+        width: 20vw;
+        font-size: 1rem;
+    }
+
+
+}

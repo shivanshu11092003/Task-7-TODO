@@ -1,11 +1,8 @@
 <html>
-
-</html>
-
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <title>Todo</title>
-    <link rel="stylesheet" href="todostyle.css">
+    <link rel="stylesheet" href="loginstyle.css">
 
     <script src="//unpkg.com/@uirouter/angularjs@1.0.5/release/angular-ui-router.js"></script>
     <script src="routing.js"></script>
@@ -21,29 +18,8 @@
         rel="stylesheet">
 </head>
 
-<body>
-
-    <div class="box" ng-app="todoApp">
-
-        <div class="side-navigation">
-            <div class="logo">
-                <img class="logoimg" src="https://cdn-icons-png.flaticon.com/512/10588/10588254.png" alt="logo">
-                <div class="text">
-                    <p class="logotext"> Todo App</p>
-                </div>
-            </div>
-
-            <div class="div"> My Todo</div>
-            <div class="divlog"><button class="logout" id="logout">Log Out</button> </div>
-
-        </div>
-        <ui-view></ui-view>
-
-
-
-
-    </div>
-
+<body ng-app="todoApp">
+    <ui-view></ui-view>
 </body>
 
 </html>

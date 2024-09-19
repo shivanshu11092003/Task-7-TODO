@@ -1,21 +1,48 @@
-<div class="todoList" ng-controller="TodoListController as todoList">
-    <form class="form" ng-submit="todoList.addTodo()">
-        <input class="input" type="text" ng-model="todoList.todoText" size="30" placeholder="add new todo" required>
-        <input class="add" type="submit" value="Add">
-    </form>
+<div class="box1" ng-controller="TodoListController as todoList">
 
-
-    <ul class="unstyled">
-        <li class="eachItem" ng-repeat="todo in todoList.todos">
-            <label class="checkbox">
-                <input class="todoDone" type="checkbox" id="check{{todo.id}}" ng-click="todoList.updateStatus($index)"
-                    ng-model="todo.completed">
-                <span class="done-{{todo.completed}}" id="{{todo.id}}" ng-model="todo.todo">{{todo.todo}}</span>
-            </label>
-            <div class="btn"><button class="todobtn" ng-click="todoList.updateTodo($index)"><img class="icon" src="pencil.png" alt=""></button>
-                <button class="todobtn" id="del{{todo.id}}" ng-click="todoList.delTodo($index)">X</button>
+    <div class="side-navigation">
+        <div class="logo1">
+            <img class="logoimg1" src="https://cdn-icons-png.flaticon.com/512/10588/10588254.png" alt="logo">
+            <div class="text1">
+                <p class="logotext12"> Todo App</p>
             </div>
+        </div>
 
-        </li>
-    </ul>
+        <div class="tododiv"> My Todo</div>
+        <div class="divlog1"><button class="logout" ng-click="todoList.logout()" id="logout">Log Out</button> </div>
+
+    </div>
+
+
+    <div class="todoList1">
+        <form class="form1" ng-submit="todoList.addTodo()">
+            <input class="input1" type="text" ng-model="todoList.todoText" size="30" placeholder="add new todo" required>
+            <input class="add1" type="submit" value="Add">
+        </form>
+
+
+        <ul class="unstyled">
+            <li class="eachItem" ng-repeat="todo in todoList.service.data">
+                <label class="checkbox">
+                    <span class="done-{{todo.done_status}}" id="todo{{todo.id}}"
+                        ng-model="todo.task">{{todo.task}}</span>
+
+                </label>
+                <div class="btn">
+                    <input class="todoDone" type="checkbox" id="{{todo.id}}" ng-click="todoList.updateStatus($event)"
+                        ng-model="todo.done_status">
+
+                    <button class="todobtn" id="{{todo.id}}" ng-hide="todo.done_status" ng-model="showinput"
+                        ng-click="todoList.updateTodo($event)"><img class="icon" src="pencil.png" alt=""></button>
+                    <button class="todobtn" id="{{todo.id}}" ng-click="todoList.delTodo($event)">X</button>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
 </div>

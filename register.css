@@ -85,13 +85,10 @@ h3{
     
 }
 .label{
-    margin: 1rem;
+    margin: .7rem;
     background-color: #fff;
     font-size: 1.5rem;
     width: 26vw;
-
-
-    
 
 
 }
@@ -105,7 +102,7 @@ h3{
     outline: 1;
     box-shadow: 0px 0px 20px -18px;
     padding: .5em;
-    padding-left: .9;
+
     color: #000008;
 
 }
